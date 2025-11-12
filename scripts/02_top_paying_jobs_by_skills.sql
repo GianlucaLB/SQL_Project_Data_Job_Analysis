@@ -23,14 +23,16 @@ ORDER BY j.salary_year_avg DESC
 LIMIT 10
 )
 SELECT 
-u.*,
+u.job_id,
+u.company,
+u.job_title,
 sd.skills
 FROM uk_top_salaries u
 INNER JOIN skills_job_dim jd
 ON u.job_id = jd.job_id
 INNER JOIN skills_dim sd 
-ON jd.skill_Id = sd.skill_id
-ORDER BY salary_year_avg DESC
+ON jd.skill_id = sd.skill_id
+ORDER BY u.salary_year_avg DESC
 
 /*In 2023, UK job postings show that SQL remains the most in-demand skill for Data Analysts, appearing in 9 of the top listings.
 Python follows with 5 mentions, while other key skills such as Power BI, Azure, AWS, and Excel also appear frequently */
