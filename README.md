@@ -68,7 +68,6 @@ GROUP BY sd.skills
 ORDER BY demand_count DESC
 LIMIT 5;
 ```
-```
 | Skill   | Demand Count |
 |---------|--------------|
 | SQL     | 4480         |
@@ -76,8 +75,7 @@ LIMIT 5;
 | PowerBI | 2865         |
 | Python  | 2129         |
 | Tableau | 1644         |
-|---------|--------------|
-```
+
 
 💡 Insight:
 SQL remains the dominant skill for Data Analysts, closely followed by Excel and visualization tools like Power BI and Tableau.
@@ -122,16 +120,13 @@ GROUP BY sd.skill_id, sd.skills
 HAVING COUNT(jd.job_id) > 10
 ORDER BY demand_count DESC, avg_salary DESC;
 ```
-```
-|---------|--------------|----------------|
 | Skill   | Demand Count | Avg Salary (£) |
 |---------|--------------|----------------|
 | SQL     | 33           | 87,156.41      |
 | Excel   | 29           | 83,361.64      |
 | Python  | 25           | 95,305.70      |
 | Tableau | 13           | 82,079.80      |
-|---------|--------------|----------------|
-```
+
 💡 Insight:
 Skills such as Python, SQL, and Excel offer the best combination of demand and salary potential, making them essential for any Data Analyst career path.
 
