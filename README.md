@@ -1,6 +1,6 @@
-🧠 Data Analyst Job Market Analysis — United Kingdom (2023)
+**🧠 Data Analyst Job Market Analysis — United Kingdom (2023)**
 
-📋 Overview
+📋 **Overview**
 
 This project explores Data Analyst job postings in the United Kingdom, focusing on the relationship between skills, demand, and salary.
 By analyzing job listings and associated skill data, the project identifies:
@@ -10,14 +10,13 @@ By analyzing job listings and associated skill data, the project identifies:
 
 The goal is to help aspiring or current Data Analysts (like me!) make strategic career decisions about which tools and technologies to focus on.
 
-🧰 Tools & Technologies
-
+**🧰 Tools & Technologies**
 - SQL (PostgreSQL / SQL Server) — for data exploration and analysis
 - CTEs (Common Table Expressions) — to structure complex queries
 - JOINs & Aggregations — for combining and summarizing job and skill data
 - GitHub Markdown — for documentation and presentation
 
-💼 Dataset
+💼 **Dataset**
 
 The dataset includes:
 - job_postings_fact — job listings and salary data
@@ -29,8 +28,9 @@ All queries focus on:
 WHERE job_title_short = 'Data Analyst'
 AND job_country = 'United Kingdom'
 
-📊 Key Analyses
-1️⃣ Top 10 Highest-Paying Data Analyst Roles
+**📊 Key Analyses**
+
+**1️⃣ Top 10 Highest-Paying Data Analyst Roles**
 ```
 SELECT
     j.job_id,
@@ -54,7 +54,8 @@ Top-paying Data Analyst roles in the UK often require strong technical expertise
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-2️⃣ Most In-Demand Skills in the UK
+**2️⃣ Most In-Demand Skills in the UK**
+
 ```
 SELECT 
     sd.skills,
@@ -82,7 +83,8 @@ SQL remains the dominant skill for Data Analysts, closely followed by Excel and 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-3️⃣ Highest-Paying Skills (UK)
+**3️⃣ Highest-Paying Skills (UK)**
+
 ```
 SELECT 
     sd.skills,
@@ -103,7 +105,8 @@ Specialized tools like Python, Snowflake, and Azure tend to correlate with highe
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-4️⃣ Most Optimal Skills — Balancing Demand and Salary
+**4️⃣ Most Optimal Skills — Balancing Demand and Salary**
+
 ```
 SELECT
     sd.skill_id,
@@ -132,15 +135,15 @@ Skills such as Python, SQL, and Excel offer the best combination of demand and s
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🧭 Conclusion
+🧭 **Conclusion**
 
-SQL is foundational — it appears in almost every high-paying job.
-Python offers excellent salary growth potential and versatility.
-Excel and Power BI remain highly demanded for business-oriented roles.
-Cloud and automation tools (AWS, Azure, Snowflake) are emerging differentiators for higher salaries.
+**SQL** is foundational — it appears in almost every high-paying job.
+**Python** offers excellent salary growth potential and versatility.
+**Excel** and **Power** BI remain highly demanded for business-oriented roles.
+**Cloud** and **automation tools (AWS, Azure, Snowflake)** are emerging differentiators for higher salaries.
 
 This analysis provides a data-driven roadmap for anyone aiming to maximize their career opportunities as a Data Analyst in the UK.
 
-Big thanks to Luke Barousse for the inspiration!
+Big thanks to **Luke** **Barousse** for the inspiration!
 This project was inspired by his YouTube video on analyzing Data Analyst job postings and skills.
 His work helped me structure SQL queries, combine skill and salary data, and present insights in a meaningful way — helping aspiring Data Analysts (myself included) make smarter career decisions.
