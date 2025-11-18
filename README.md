@@ -11,7 +11,7 @@ By analyzing job listings and associated skill data, the project identifies:
 The goal is to help aspiring or current Data Analysts (like me!) make strategic career decisions about which tools and technologies to focus on.
 
 **🧰 Tools & Technologies**
-- SQL (PostgreSQL / SQL Server) — for data exploration and analysis
+- SQL (PostgreSQL) — for data exploration and analysis
 - CTEs (Common Table Expressions) — to structure complex queries
 - JOINs & Aggregations — for combining and summarizing job and skill data
 - GitHub Markdown — for documentation and presentation
