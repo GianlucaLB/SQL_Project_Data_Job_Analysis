@@ -25,8 +25,8 @@ The dataset includes:
 - skills_job_dim — a bridge table linking jobs to skills
 
 All queries focus on:
-WHERE job_title_short = 'Data Analyst'
-AND job_country = 'United Kingdom'
+- WHERE job_title_short = 'Data Analyst'
+- AND job_country = 'United Kingdom'
 
 **📊 Key Analyses**
 
